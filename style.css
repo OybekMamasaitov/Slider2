@@ -1,0 +1,24 @@
+.image {
+    background-image: url('image 1.jpg');
+    background-size: cover;
+    width: 423px;
+    height: 300px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #f1c40f;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.first_dot {
+    background-color: #f39c12;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
