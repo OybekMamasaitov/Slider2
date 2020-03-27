@@ -1,23 +1,51 @@
 const entities = [
     {
         text: "Первый слайд",
-        img: "image 1.jpg"
+        img: "images/image 1.jpg"
     },
 
     {
         text: "Второй слайд",
-        img: "image 2.jpg"
+        img: "images/image 2.jpg"
     },
 
     {
         text: "Третий слайд",
-        img: "image 3.jpg"
+        img: "images/image 3.jpg"
+    },
+
+    {
+        text: "Четвертый слайд",
+        img: "images/image 4.jpg"
+    },
+
+    {
+        text: "Пятый слайд",
+        img: "images/image 5.jpg"
+    },
+
+    {
+        text: "Шестой слайд",
+        img: "images/image 6.jpg"
+    },
+
+    {
+        text: "Седьмой слайд",
+        img: "images/image 7.jpg"
     }
 ]
 
 const text = document.querySelector(".text");
 const img = document.querySelector(".image");
-const dots = document.querySelectorAll(".dot")
+const dotsContainer = document.querySelector(".dots_container");
+
+for (let i = 0; i < entities.length; i++) {
+    let dot = document.createElement("div");
+    dot.className = "dot";
+    dotsContainer.append(dot);
+}
+
+const dots = document.querySelectorAll(".dot");
 
 const setEntity = (index) => {
     text.innerText = entities[index].text;

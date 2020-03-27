@@ -1,8 +1,12 @@
 .image {
-    background-image: url('image 1.jpg');
+    background-image: url('images/image 1.jpg');
     background-size: cover;
-    width: 423px;
-    height: 300px;
+    width: 640px;
+    height: 427px;
+}
+
+.dots_container {
+    display: flex;
 }
 
 .dot {
