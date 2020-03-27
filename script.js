@@ -42,10 +42,15 @@ const dotsContainer = document.querySelector(".dots_container");
 for (let i = 0; i < entities.length; i++) {
     let dot = document.createElement("div");
     dot.className = "dot";
+    if (i === 0) {
+        dot.classList.add("first_dot");
+    }
     dotsContainer.append(dot);
 }
 
 const dots = document.querySelectorAll(".dot");
+
+dots.forEach((dot, index) => dot.addEventListener('click', () => { currentSlide(index); }))
 
 const setEntity = (index) => {
     text.innerText = entities[index].text;
